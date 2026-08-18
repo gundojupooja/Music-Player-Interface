@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.player {
+    width: 380px;
+    max-width: 90%;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.player h1 {
+    margin-bottom: 25px;
+}
+
+.album {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-icon {
+    font-size: 80px;
+}
+
+.player h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.player > p {
+    color: #777;
+    margin-top: 7px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #764ba2;
+    border-radius: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #777;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.controls button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #eee;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.controls .play-btn {
+    width: 60px;
+    height: 60px;
+    background: #764ba2;
+    color: white;
+    font-size: 24px;
+}
+
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.playlist {
+    text-align: left;
+}
+
+.song {
+    padding: 13px;
+    margin-top: 8px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.song:hover,
+.song.active {
+    background: #e5d8f5;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
